@@ -1,0 +1,29 @@
+{
+  "name": "@sv-components/a-rive",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "dist/a-rive.js",
+  "module": "dist/a-rive.mjs",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsup --format esm,cjs --dts src/index.ts",
+    "lint": "eslint --ext .ts .",
+    "test": "vitest run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit": "^2.5.0"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0"
+  },
+  "tsup": {
+    "entry": {
+      "a-rive": "src/index.ts"
+    },
+    "sourcemap": true,
+    "clean": true
+  }
+}
