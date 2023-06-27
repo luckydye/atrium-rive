@@ -7,6 +7,7 @@
   "module": "dist/a-rive.mjs",
   "types": "src/index.ts",
   "scripts": {
+    "dev": "histoire dev",
     "build": "tsup --format esm,cjs --dts src/index.ts",
     "lint": "eslint --ext .ts .",
     "test": "vitest run"
@@ -14,10 +15,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rive-app/canvas-single": "^1.2.1",
     "lit": "^2.5.0"
   },
   "devDependencies": {
-    "tsup": "^6.7.0"
+    "@histoire/plugin-vue": "^0.16.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "histoire": "^0.16.2",
+    "tsup": "^6.7.0",
+    "vue": "^3.3.4"
   },
   "tsup": {
     "entry": {
